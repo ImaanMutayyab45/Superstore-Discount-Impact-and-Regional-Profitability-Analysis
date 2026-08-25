@@ -25,7 +25,7 @@ Retailers often chase sales volume as a success metric, but high sales don't gua
 
 ## Project Workflow
 
-1. **Problem Statement & Dataset Overview** — dataset structure, features, and business context.
+1. **Problem Statement & Dataset Overview** - dataset structure, features, and business context.
 2. **Data Cleaning & Quality Audit**
    - Missing value audit (before/after): Postal Code imputed with a placeholder (0); Sales
      imputed using the median Sales per Sub-Category
@@ -37,24 +37,21 @@ Retailers often chase sales volume as a success metric, but high sales don't gua
    - Six groupby-based business questions answered (category, discount, region, shipping mode,
      seasonality, segment)
 4. **Distribution & Visual Analysis**
-   - Histogram/KDE — Profit distribution
-   - Bar chart — Total Profit by Sub-Category
-   - Boxplot — Profit across Discount Ranges (outlier detection)
-   - Correlation heatmap — Sales, Discount, Profit, Shipping Delay
-   - Scatter plot — Sales vs Profit colored by Discount
+   - Histogram/KDE - Profit distribution
+   - Bar chart - Total Profit by Sub-Category
+   - Boxplot - Profit across Discount Ranges (outlier detection)
+   - Correlation heatmap - Sales, Discount, Profit, Shipping Delay
+   - Scatter plot - Sales vs Profit colored by Discount
    - Comments under every chart
-5. **Key Business Takeaways** — 5 data-backed findings + overall conclusion
+5. **Key Business Takeaways** - 5 data-backed findings + overall conclusion
 
 ## Key Findings
 
-- Discounts above ~20% consistently push median profit into negative territory; 31–50%
-  discounts are the most damaging band.
+- Discounts above ~20% consistently push median profit into negative territory; 31–50% discounts are the most damaging band.
 - Certain sub-categories (e.g., Tables, Bookcases) lose money despite strong sales volume.
-- Some regions/states generate high sales but low profit-per-order — efficiency doesn't track
-  with revenue size.
+- Some regions/states generate high sales but low profit-per-order - efficiency doesn't track with revenue size.
 - Shipping mode has little to no measurable effect on profit margin.
-- The **Home Office** segment delivers the strongest profit-per-order, making it the top
-  candidate for reallocated marketing/sales resources.
+- The **Home Office** segment delivers the strongest profit-per-order, making it the top candidate for reallocated marketing/sales resources.
 
 ## Tools & Libraries
 - Python
@@ -63,13 +60,12 @@ Retailers often chase sales volume as a success metric, but high sales don't gua
 - Jupyter Notebook
 
 ## Project Structure
+```
 superstore-discount-profitability-analysis/
-│
-├── data/
-│ └── Sample_Superstore_messy.csv
-├── notebook/
-│ └── superstore_analysis.ipynb
+├── superstore_analysis.ipynb
+├── Sample_Superstore_messy.csv
 └── README.md
+```
 
 ## Author
 Name: Imaan Mutayyab 
